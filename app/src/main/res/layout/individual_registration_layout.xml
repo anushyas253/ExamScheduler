@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background4_2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="217dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="66dp"
+        android:text="@string/indv_reg_title"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/indvName_EV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/indvEdu_EV"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawablePadding="0dp"
+        android:ems="10"
+        android:hint="education"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indvName_EV" />
+
+    <EditText
+        android:id="@+id/indvDOB_EV"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/indv_reg_dob"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indvEdu_EV" />
+
+    <EditText
+        android:id="@+id/indvName_EV"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="@string/indv_reg_name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/indvRegisterB"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#21A179"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/indv_reg_registerB"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/IndvWorkexp_EV"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="work exp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/indvTECHTRAIN_EV"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/IndvTechChoice_EV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="techchoice"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/indvRegisterB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IndvWorkexp_EV" />
+
+    <EditText
+        android:id="@+id/indvTECHTRAIN_EV"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="tech training"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/IndvWorkexp_EV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indvDOB_EV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
